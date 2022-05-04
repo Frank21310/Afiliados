@@ -1,0 +1,46 @@
+<div nz-row>
+  <div nz-col nzSpan="12">
+    <nz-card nzHoverable style="width:240px" [nzCover]="coverTemplate">
+      <nz-card-meta nzTitle="Europe Street beat" nzDescription="www.instagram.com"></nz-card-meta>
+    </nz-card>
+    <ng-template #coverTemplate>
+      <img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />
+    </ng-template>
+  </div>
+
+  <div nz-col nzSpan="12">
+    <nz-progress [nzPercent]="75" nzType="circle"></nz-progress>
+    <nz-progress [nzPercent]="70" nzType="circle" nzStatus="exception"></nz-progress>
+    <nz-progress [nzPercent]="100" nzType="circle"></nz-progress>
+  </div>
+</div>
+
+<br>
+
+<div nz-row>
+  <div nz-col nzSpan="8">
+    <nz-switch [ngModel]="true"></nz-switch>
+    <br>
+    <br>
+    <nz-switch nzSize="small" [ngModel]="true"></nz-switch>
+  </div>
+
+  <div nz-col nzSpan="8">
+    <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Select a person" [(ngModel)]="selectedValue">
+      <nz-option nzLabel="Jack" nzValue="jack"></nz-option>
+      <nz-option nzLabel="Lucy" nzValue="lucy"></nz-option>
+      <nz-option nzLabel="Tom" nzValue="tom"></nz-option>
+    </nz-select>
+  </div>
+
+  <div nz-col nzSpan="8">
+    <nz-radio-group>
+      <label nz-radio nzValue="A">A</label>
+      <label nz-radio nzValue="B">B</label>
+      <label nz-radio nzValue="C">C</label>
+      <label nz-radio nzValue="D">D</label>
+    </nz-radio-group>
+  </div>
+</div>
+
+

@@ -1,0 +1,14 @@
+h1 {
+  color: red;
+  text-align: center;
+  text-effect: engrave;
+}
+nz-progress {
+  margin-right: 8px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+nz-select {
+  width: 200px;
+}
