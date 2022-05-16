@@ -1,17 +1,17 @@
 <nz-table #basicTable [nzData]="Lista">
   <thead>
   <tr>
-    <th>Name</th>
-    <th>Age</th>
-    <th>Address</th>
+    <th>nombre</th>
+    <th>edad</th>
+    <th>direccion</th>
 
   </tr>
   </thead>
   <tbody>
   <tr *ngFor="let data of basicTable.data">
-    <td>{{ data.name }}</td>
-    <td>{{ data.age }}</td>
-    <td>{{ data.address }}</td>
+    <td>{{ data.nombre }}</td>
+    <td>{{ data.edad }}</td>
+    <td>{{ data.direccion }}</td>
     <td>
 
       <a>Delete</a>
